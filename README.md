@@ -1,24 +1,5 @@
-# README
+# Odin Kittens
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Odin Kittens is an exercise in basic API building.  Users can perform each of the seven RESTful actions on a Kitten object.  HTML requests can be handled through the main site interface.  Conversely, a list of Kittens, as well as information about an indivudual Kitten, can be obtained in JSON format through an API request.  
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Part of The Odin Project's [Ruby on Rails Curriculum.](https://github.com/dvislearning/odin-kittens)
