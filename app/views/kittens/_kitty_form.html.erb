@@ -1,0 +1,19 @@
+<div id="main_form">
+  <%= form_for(@kitten) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+
+    <%= f.label :name %><br/ >
+    <%= f.text_field :name %><br/ ><br/ >
+
+    <%= f.label :age %><br/ >
+    <%= f.number_field :age, in: 1..30 %><br/ ><br/ >
+
+    <%= f.label :cuteness %><br/ >
+    <%= f.number_field :cuteness, in: 1..10 %><br/ ><br/ >
+
+    <%= f.label :softness %><br/ >
+    <%= f.number_field :softness, in: 1..10 %><br/ ><br/ >
+
+    <%= f.submit("Submit") %>
+  <% end %>
+</div>

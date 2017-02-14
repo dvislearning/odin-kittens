@@ -1,0 +1,30 @@
+<h1>All Kittens</h1>
+
+<table id="kitty_table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Cuteness</th>
+			<th>Softness</th>
+			<th>Created At</th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @kittens.each do |kitten| %>
+			<tr>
+				<td><%= link_to "#{kitten.name}", kitten %></td>
+				<td><%= kitten.age %></td>
+				<td><%= kitten.cuteness %></td>
+				<td><%= kitten.softness %></td>
+				<td><%= kitten.created_at.strftime("%m/%d/%Y %l:%M:%S %p")  %></td>
+				<td><%= link_to "edit", edit_kitten_path(kitten) %></td>
+				<td><%= link_to "delete", kitten, method: :delete,
+					data: { confirm: "You sure?"} %></td>
+
+			</tr>
+		<% end %>
+	</tbody>
+</table>
