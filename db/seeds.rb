@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 30.times do
-	Kitten.create(name: "#{Faker::Cat.name}", age:rand(1..15), cuteness:rand(1..10), softness:rand(1..10), created_at:Time.now)
+	Kitten.create(name: "#{Faker::Cat.name}", age:rand(1..30), cuteness:rand(1..10), softness:rand(1..10), created_at:Time.now)
 end
